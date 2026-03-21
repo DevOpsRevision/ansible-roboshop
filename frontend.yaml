@@ -38,7 +38,7 @@
   - name: Unzip Application
     ansible.builtin.unarchive:
       src: /tmp/frontend.zip
-      dest: /user/share/nginx/html
+      dest: /usr/share/nginx/html
       remote_src: yes #This means file already exists in this particular server.
 
   - name: Remove default nginx conf
