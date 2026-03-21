@@ -62,7 +62,7 @@
       dest: /etc/yum.repos.d/mongo.repo
 
   - name: Install mongodb client
-    anisble.builtin.dnf:
+    ansible.builtin.dnf:
       name: mongodb-mongosh
       state: present
 
