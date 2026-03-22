@@ -40,7 +40,7 @@
       chdir: /app
     
   - name: Move and rename jar file
-    ansible.builtin.command: mv /app/target/shipping.jar /app/shipping.jar
+    ansible.builtin.command: mv /app/target/shipping-1.0.jar /app/shipping.jar
 
   - name: Copy Shipping systemd service file
     ansible.builtin.copy:
